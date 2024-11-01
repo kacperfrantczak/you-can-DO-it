@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#333D29,#414833);
+    padding: 10px;
+}
+
+.doit-app{
+    width: 100%;
+    max-width: 540px;
+    background: #A4AC86;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 12px;
+}
+
+.doit-app h2{
+    color: #582F0E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.doit-app h2 img{
+    width: 40px;
+    margin-left: 8px;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #C2C5AA;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #7F4F24;
+    color: #C2C5AA;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 22px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #582F0E;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+
+    left: 12px;
+    top: 12px;
+}
+
+ul li.checked{
+    color: #582F0E;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover{
+    background: #B6AD90;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: #C2C5AA;
+    font-size: 14px;
+}
